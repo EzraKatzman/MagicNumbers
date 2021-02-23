@@ -10,7 +10,7 @@ const Home = () => {
                     
                     <div className='flex justify-center p-2 mt-2'>
                         <p className='text-lg p-2'>Sign up to track your high scores</p>
-                        <Link to='/signup' className='p-2 font-bold bg-tgray-900 dark:bg-tgray-50 hover:bg-tgray-700 dark:hover:bg-tgray-200 text-tgray-50 dark:text-tgray-900 rounded-full'>Join Now</Link>
+                        <Link to='/signup' className='p-2 font-bold bg-tgray-900 dark:bg-tgray-50 hover:bg-tgray-700 dark:hover:bg-tgray-200 text-tgray-50 dark:text-tgray-900 rounded-full sm:animate-bounce'>Join Now</Link>
                     </div>
                     
                 </div>
