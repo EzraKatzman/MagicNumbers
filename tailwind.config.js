@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         tgray: colors.trueGray,
-        lightBlue: colors.lightBlue,
+        lime: colors.lime,
         cyan: colors.cyan,
       },
       fontFamily: {
