@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className='sm:grid sm:grid-cols-3 sm:items-center py-4 px-2 border-b border-tgray-200 mb-14 sm:mb-20 xl:mb-8 dark:bg-tgray-900'>
             <div className='flex items-center justify-between px-4 sm:p-0'>
                 <div>
-                    <Link to='/' className='block font-semibold rounded italic logo dark:text-tgray-200 '>Magic Numbers</Link>
+                    <Link to='/' className='block font-semibold italic logo dark:text-tgray-200'>Magic Numbers</Link>
                 </div>
                 <div className='sm:hidden'>
                     <button onClick={() => setView(!isOpen)} type='button' className='block focus:outline-none'>
