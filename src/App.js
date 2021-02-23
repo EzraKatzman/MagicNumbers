@@ -13,20 +13,22 @@ function App() {
     const isDark = useSelector(state => state.isDark)
 
     return (
-    <Router>
-      <div className={`${isDark ? 'dark' : ''} max-w-screen-lg xl:max-w-screen-xl mx-auto`}>
-        <div> {/* class for this div will affect global background color for dark theme */} 
-          <Navbar/>
-          <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='/problems' component={Problems}/>
-            <Route path='/leaders' component={Leaderboard}/>
-            <Route path='/login' component={Login}/>
-            <Route path='/signup' component={Signup}/>
-          </Switch>
+    <div className={`${isDark ? 'dark' : ''} w-screen h-screen`}>
+      <Router>
+        <div className='dark:bg-tgray-900 bg-tgray-50'>
+          <div className='max-w-screen-lg xl:max-w-screen-xl mx-auto'>
+            <Navbar/>
+            <Switch>
+              <Route path='/' exact component={Home}/>
+              <Route path='/problems' component={Problems}/>
+              <Route path='/leaders' component={Leaderboard}/>
+              <Route path='/login' component={Login}/>
+              <Route path='/signup' component={Signup}/>
+            </Switch>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
